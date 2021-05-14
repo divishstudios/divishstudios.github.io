@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Creative Shanti</title>
+		<title>Divish Studios</title>
+		<script src="https://cdn.jsdelivr.net/npm/vara@1.2.0/src/vara.min.js" type="text/javascript"></script>
 	</head>
 	<body style="background-color: black">
+	
+	<h1>Top</h1>
+	<div id="vara-container"></div>
+	
+	<h1>Break</h1>
+	<hr/>
+	
 		<img src="/background.png"/>
-		<p style="color:white">Enjoy the sunset.  Something Awesome coming soon.</p>
+		<p style="color:white">A small team with a story to tell</p>
+	
+		<script>
+			var vara = new Vara("#vara-container","font.json",[{
+    			text:"Hello World!!"
+			}]);
+		</script>
 	</body>
 </html>
 
