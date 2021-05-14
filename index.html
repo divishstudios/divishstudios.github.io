@@ -7,7 +7,7 @@
 	<body style="margin:0; background-color: white">
 	
 		<br/>
-		<div id="vara-container" style="width:80%; background-color:black;margin: auto;"></div>
+		<div id="vara-container" style="width:90%; height:300px; background-color:black;margin: auto;"></div>
 	
 		<img style="width:100%; padding:0; margin:0;" src="/background.png"/>
 		
@@ -28,15 +28,18 @@
 			else if(fontSize < 1200) fontSize = 360;
 			else if(fontSize < 2000) fontSize = 600;
 		
-			var vara = new Vara("#vara-container","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Parisienne/Parisienne.json",[{
+			var vara = new Vara("#vara-container","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",[{
     			text:"Divish Studios",
     			color: "white",
 			    fontSize:fontSize,
-			    textAlign:"center"
+			    textAlign:"center",
+			    duration:3000,
+			    delay:1000
 			}]);
 			
 			//"https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Pacifico/PacificoSLO.json"
 			//https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Parisienne/Parisienne.json
+			//https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json
 		</script>
 	</body>
 </html>
