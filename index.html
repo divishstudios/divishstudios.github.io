@@ -7,11 +7,13 @@
 	<body style="margin:0; background-color: white">
 	
 		<br/>
-		<div id="vara-container" style="width:80%; background-color:yellow;margin: auto;"></div>
+		<div id="vara-container" style="width:80%; background-color:black;margin: auto;"></div>
 	
 		<img style="width:100%; padding:0; margin:0;" src="/background.png"/>
-		<p style="color:white">A small team with a story to tell</p>
-	
+		
+		<div style="background-color:red">
+			<p style="color:white">A small team with a story to tell</p>
+		</div>
 
 		<div>
 			<p>Divish Studios, LLC</p>
@@ -22,16 +24,19 @@
 		<script>
 		var fontSize = 200;
 			if(fontSize < 600) fontSize = 60;
-			else if(fontSize < 900) fontSize = 180;
-			else if(fontSize < 1200) fontSize = 240;
-			else if(fontSize < 2000) fontSize = 400;
+			else if(fontSize < 900) fontSize = 270;
+			else if(fontSize < 1200) fontSize = 360;
+			else if(fontSize < 2000) fontSize = 600;
 		
-			var vara = new Vara("#vara-container","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Pacifico/PacificoSLO.json",[{
+			var vara = new Vara("#vara-container","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Parisienne/Parisienne.json",[{
     			text:"Divish Studios",
     			color: "white",
 			    fontSize:fontSize,
 			    textAlign:"center"
 			}]);
+			
+			//"https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Pacifico/PacificoSLO.json"
+			//https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Parisienne/Parisienne.json
 		</script>
 	</body>
 </html>
