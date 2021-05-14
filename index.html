@@ -5,11 +5,11 @@
 		<script src="https://cdn.jsdelivr.net/npm/vara@1.2.0/src/vara.min.js" type="text/javascript"></script>
 	</head>
 	<body style="margin:0; background-color: white">
-	
-		<br/>
-		<div id="vara-container" style="width:90%; height:300px; background-color:black;margin: auto;"></div>
-	
-		<img style="width:100%; padding:0; margin:0;" src="/background.png"/>
+		<img style="width:100%; padding:0; margin:0; right:0;" src="./background.png"/>
+		
+		<div id="vara-container1" style="width:120px; background-color:blue;position: absolute; top: 40px; right:550px"></div>
+		<div id="vara-container2" style="width:220px; background-color:blue;position: absolute;top: 40px; right:300px"></div>
+		<div id="vara-container3" style="width:340px; background-color:orange;position: absolute;top: 40px; right:0px"></div>
 		
 		<div style="background-color:red">
 			<p style="color:white">A small team with a story to tell</p>
@@ -31,18 +31,47 @@
 // var idealFontSize = 48, idealScreenSize = 1400, maxFontSize = 64, minFontSize = 22,
 // fontSize = (screen.width / idealScreenSize) * idealFontSize;
 // fontSize = Math.max(minFontSize,Math.min(maxFontSize,fontSize));
-		
-			var vara = new Vara("#vara-container","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",[{
-    			text:"Divish Studios",
-    			color: "white",
+
+			var vara = new Vara("#vara-container1","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Parisienne/Parisienne.json",[{
+    			text:"D",
+			    duration:500,
+			    delay:500
+			}],{
+    			color: "green",
 			    fontSize:fontSize,
-//			    strokeWidth:2,
-			    textAlign:"center",
-			    letterSpacing:0,
-			    duration:3000,
-			    delay:1000
-			}]);
+			    strokeWidth:0.8,
+//			    letterSpacing:-38,			
+			});
+		
+			var vara = new Vara("#vara-container2","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",[{
+    			text:"ivish",
+			    duration:1500,
+			    delay:1000,
+		    strokeWidth:0.8,
+		    letterSpacing:-23,
+		    x:20
+			}],{
+    			color: "green",
+			    fontSize:fontSize,
+//			    strokeWidth:0.8,
+//			    letterSpacing:-38,			
+			});
+
+			var vara = new Vara("#vara-container3","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",[{
+    			text:"Studios",
+			    duration:1500,
+			    delay:2500,
+		    strokeWidth:0.8,
+		    letterSpacing:-23,
+		    x:20
+			}],{
+    			color: "green",
+			    fontSize:fontSize,
+//			    strokeWidth:0.8,
+//			    letterSpacing:-38,			
+			});
 			
+			//document.getElementById('vara-container1').style.top = '100px';
 			//MAYBE "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Pacifico/PacificoSLO.json"
 			//NO - D Good https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Parisienne/Parisienne.json
 			//NO https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json
