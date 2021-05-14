@@ -4,10 +4,10 @@
 		<title>Divish Studios</title>
 		<script src="https://cdn.jsdelivr.net/npm/vara@1.2.0/src/vara.min.js" type="text/javascript"></script>
 	</head>
-	<body style="background-color: white">
+	<body style="margin:0; background-color: white">
 	
 		<h1>Top</h1>
-		<div id="vara-container" style="width:100%; background-color:yellow"></div>
+		<div id="vara-container" style="width:80%; background-color:yellow;margin: auto;"></div>
 	
 		<h1>Break</h1>
 		<hr/>
@@ -16,11 +16,11 @@
 		<p style="color:white">A small team with a story to tell</p>
 	
 		<script>
-		var fontSize = 64;
-			if(fontSize < 600) fontSize = 24;
-			else if(fontSize < 900) fontSize = 32;
-			else if(fontSize < 1200) fontSize = 40;
-			else if(fontSize < 2000) fontSize = 48;
+		var fontSize = 200;
+			if(fontSize < 600) fontSize = 60;
+			else if(fontSize < 900) fontSize = 90;
+			else if(fontSize < 1200) fontSize = 120;
+			else if(fontSize < 2000) fontSize = 200;
 		
 			var vara = new Vara("#vara-container","https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",[{
     			text:"Divish Studios",
